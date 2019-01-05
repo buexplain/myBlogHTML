@@ -177,7 +177,7 @@ body {
 .blog {
   /*列表*/
   /*侧边*/
-  /*文章详情*/
+  /*详情*/
   /*评论*/
 }
 
@@ -207,46 +207,60 @@ body {
   position: relative;
 }
 
-.blog .list {
+.blog .article {
   background-color: #fff;
   width: 759px;
   border-radius: 2px;
   margin-bottom: 15px;
 }
 
-.blog .list li {
+.blog .article .nav {
+  padding: 15px;
+  padding-bottom: 0;
+}
+
+.blog .article .nav a {
+  color: #424242 !important;
+  font-size: 18px;
+}
+
+.blog .article .nav a:hover {
+  color: #4183c4 !important;
+}
+
+.blog .article .list li {
   padding: 15px;
   border-bottom: 1px solid #c2c2c2;
 }
 
-.blog .list li:last-child {
+.blog .article .list li:last-child {
   border-bottom: 0;
 }
 
-.blog .list .title a {
+.blog .article .list .title a {
   color: #424242;
   font-weight: 700;
   font-size: 20px;
 }
 
-.blog .list .title a:hover {
+.blog .article .list .title a:hover {
   color: #4183c4;
 }
 
-.blog .list .title .layui-badge {
+.blog .article .list .title .layui-badge {
   margin-left: 8px;
   font-size: 14px;
   padding: 2px 6px;
 }
 
-.blog .list .extra {
+.blog .article .list .extra {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   padding: 8px 0 0 0;
 }
 
-.blog .list .extra span {
+.blog .article .list .extra span {
   margin-right: 8px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -261,7 +275,7 @@ body {
   font-size: 14px;
 }
 
-.blog .list .more {
+.blog .article .more {
   text-align: center;
   background-color: #F0F0F0;
   padding-top: 15px;
@@ -269,7 +283,7 @@ body {
 }
 
 @media only screen and (max-width: 1024px) {
-  .blog .list {
+  .blog .article {
     width: 92%;
     margin-left: 4% !important;
     margin-right: 4% !important;
@@ -362,43 +376,43 @@ body {
   }
 }
 
-.blog .article {
+.blog .details {
   background-color: #fff;
   border-radius: 2px;
   padding: 15px;
   margin-bottom: 15px;
 }
 
-.blog .article .nav a {
+.blog .details .nav a {
   color: #424242 !important;
   font-size: 18px;
 }
 
-.blog .article .nav a:hover {
+.blog .details .nav a:hover {
   color: #4183c4 !important;
 }
 
-.blog .article .title {
+.blog .details .title {
   color: #424242;
   font-weight: 700;
   font-size: 20px;
   margin: 0 0 15px 0;
 }
 
-.blog .article .title .layui-badge {
+.blog .details .title .layui-badge {
   margin-left: 8px;
   font-size: 14px;
   padding: 2px 6px;
 }
 
-.blog .article .extra {
+.blog .details .extra {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   margin: 0 0 15px 0;
 }
 
-.blog .article .extra span {
+.blog .details .extra span {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -415,26 +429,26 @@ body {
   font-size: 14px;
 }
 
-.blog .article .tag {
+.blog .details .tag {
   margin: 0 0 15px 0;
 }
 
-.blog .article .tag a span {
+.blog .details .tag a span {
   font-size: 14px;
   margin-right: 8px;
   padding: 3px 5px;
 }
 
-.blog .article .tag a span:hover {
+.blog .details .tag a span:hover {
   color: #4183c4 !important;
 }
 
-.blog .article .content .origin a:hover {
+.blog .details .content .origin a:hover {
   color: #4183c4 !important;
 }
 
 @media only screen and (max-width: 1024px) {
-  .blog .article {
+  .blog .details {
     width: 86%;
     margin-left: 4% !important;
     margin-right: 4% !important;
@@ -446,42 +460,56 @@ body {
   background-color: #F0F0F0;
 }
 
-.blog .comment .item {
-  margin-bottom: 50px;
+.blog .comment .list ul > li {
+  border-bottom: 1px solid #c2c2c2;
+  border-left: 1px solid #c2c2c2;
+  margin-bottom: 25px;
 }
 
-.blog .comment .item .head {
+.blog .comment .list ul > li:last-child {
+  border: none;
+  margin-bottom: 0px;
+}
+
+.blog .comment .list .avatar {
   float: left;
+}
+
+.blog .comment .list .avatar img {
   max-width: 50px;
   border-radius: 2px;
 }
 
-.blog .comment .item .msg {
+.blog .comment .list .col {
   padding-left: 65px;
 }
 
-.blog .comment .item .msg .nickname {
-  position: relative;
+.blog .comment .list .col .title .nickname:hover {
+  color: #4183c4;
+}
+
+.blog .comment .list .col .title .post-time {
   color: #787878;
+  font-size: 14px;
+  float: right;
 }
 
-.blog .comment .item .msg .nickname .praise {
-  position: absolute;
-  right: 0;
-  cursor: pointer;
+.blog .comment .list .col .content {
+  font-size: 16px;
 }
 
-.blog .comment .item .msg .nickname .praise:hover {
+.blog .comment .list .col .operation {
+  text-align: right;
+}
+
+.blog .comment .list .col .operation a {
+  color: #787878;
+  font-size: 14px;
+  margin-left: 15px;
+}
+
+.blog .comment .list .col .operation a:hover {
   color: #4183c4;
-}
-
-.blog .comment .item .msg .nickname .active {
-  color: #4183c4;
-}
-
-.blog .comment .item .msg .layui-elem-quote {
-  padding: 2px 5px;
-  margin-bottom: 5px;
 }
 
 .blog .comment .more {

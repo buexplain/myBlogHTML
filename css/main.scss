@@ -201,43 +201,56 @@ body {
         position: relative;
     }
     /*列表*/
-    .list {
+    .article {
         background-color: $font-color-white;
 		width: 759px;
         border-radius: 2px;
         margin-bottom: 15px;
-        li {
+        .nav {
             padding: 15px;
-            border-bottom: 1px solid $border-color;
-            &:last-child {
-                border-bottom: 0;
-            }
-        }
-        .title {
+            padding-bottom: 0;
             a {
-                color: $font-color-black;
-                font-weight: 700;
-                font-size: $font-size-title;
-            }
-            a:hover {
-                color: $font-color-hover;
-            }
-            .layui-badge {
-                margin-left: 8px;
-                font-size: $font-size-extra;
-                padding: 2px 6px;
+                &:hover {
+                    color: $font-color-hover !important;
+                }
+                color: $font-color-black !important;
+                font-size: $font-size-nav;
             }
         }
-        .extra {
-            display: flex;
-            padding: 8px 0 0 0;
-            span {
-                margin-right: 8px;
+        .list {
+            li {
+                padding: 15px;
+                border-bottom: 1px solid $border-color;
+                &:last-child {
+                    border-bottom: 0;
+                }
+            }
+            .title {
+                a {
+                    color: $font-color-black;
+                    font-weight: 700;
+                    font-size: $font-size-title;
+                }
+                a:hover {
+                    color: $font-color-hover;
+                }
+                .layui-badge {
+                    margin-left: 8px;
+                    font-size: $font-size-extra;
+                    padding: 2px 6px;
+                }
+            }
+            .extra {
                 display: flex;
-                align-items: center;
-                justify-content: center;
-                padding: 2px 6px;
-                font-size: $font-size-extra;
+                padding: 8px 0 0 0;
+                span {
+                    margin-right: 8px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    padding: 2px 6px;
+                    font-size: $font-size-extra;
+                }
             }
         }
         .more {
@@ -248,7 +261,7 @@ body {
         }
     }
     @media only screen and (max-width: 1024px) {
-        .list {
+        .article {
             width: 92%;
             margin-left: 4% !important;
             margin-right: 4% !important;
@@ -330,8 +343,8 @@ body {
             margin-right: 4% !important;
         }
     }
-    /*文章详情*/
-    .article {
+    /*详情*/
+    .details {
         background-color: $font-color-white;
         border-radius: 2px;
         padding: 15px;
@@ -394,7 +407,7 @@ body {
         }
     }
     @media only screen and (max-width: 1024px) {
-        .article {
+        .details {
             width: 86%;
             margin-left: 4% !important;
             margin-right: 4% !important;
@@ -404,33 +417,50 @@ body {
     /*评论*/
     .comment {
         background-color: $body-background-color;
-        .item {
-            margin-bottom: 50px;
-            .head {
-                float: left;
-                max-width: 50px;
-                border-radius: 2px;
+        .list {
+            ul>li {
+                border-bottom: 1px solid $border-color;
+                border-left: 1px solid $border-color;
+                margin-bottom: 25px;
+                &:last-child {
+                    border: none;
+                    margin-bottom: 0px;
+                }
             }
-            .msg {
+            .avatar {
+                float: left;
+                img {
+                    max-width: 50px;
+                    border-radius: 2px;
+                }
+            }
+            .col {
                 padding-left: 65px;
-                .nickname {
-                    position: relative;
-                    color: $font-color-gray;
-                    .praise {
-                        position: absolute;
-                        right: 0;
-                        cursor: pointer;
+                .title {
+                    .nickname {
                         &:hover{
                             color: $font-color-hover;    
                         }
                     }
-                    .active {
-                        color: $font-color-hover;
+                    .post-time {
+                        color: $font-color-gray;
+                        font-size: $font-size-extra;
+                        float: right;
                     }
                 }
-                .layui-elem-quote {
-                    padding: 2px 5px;
-                    margin-bottom: 5px;
+                .content {
+                    font-size: $font-size-content;
+                }
+                .operation {
+                    text-align: right;
+                    a {
+                        color: $font-color-gray;
+                        font-size: $font-size-extra;
+                        margin-left: 15px;
+                        &:hover{
+                            color: $font-color-hover;    
+                        }
+                    }
                 }
             }
         }
