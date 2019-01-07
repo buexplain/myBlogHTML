@@ -425,7 +425,6 @@ body {
   border: none;
   padding: 0 8px 0 0;
   margin-right: 8px;
-  padding: 0;
   font-size: 14px;
 }
 
@@ -463,6 +462,7 @@ body {
 .blog .comment .list ul > li {
   border-bottom: 1px solid #c2c2c2;
   border-left: 1px solid #c2c2c2;
+  border-radius: 2px;
   margin-bottom: 25px;
 }
 
