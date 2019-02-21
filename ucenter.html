@@ -132,123 +132,38 @@
 	<!--主体内容-->
 	<div class="container">
 		<div class="wrap">
-			<div class="article">
-				<div class="nav">
-					<span class="layui-breadcrumb" lay-separator=">">
-						<a href="index.html">首页</a>
-						<a href="">国际新闻</a>
-					</span>
-				</div>
-				<ul class="list">
-					<li>
-						<div class="title">
-							<a href="content.html">高并发架构方案详解<span class="layui-badge layui-bg-green">原创</span></a>
-						</div>
-						<div class="extra">
-							<span class="layui-badge layui-bg-gray">
-								<svg class="icon icon-w15" aria-hidden="true">
-									<use xlink:href="#icon-shizhong"></use>
-								</svg>
-								14:07
-							</span>
-							<span class="layui-badge layui-bg-gray">
-								<svg class="icon" aria-hidden="true">
-									<use xlink:href="#icon-eye"></use>
-								</svg>
-								3.2K
-							</span>
-							<span class="layui-badge layui-bg-gray">
-								<svg class="icon icon-w15" aria-hidden="true">
-									<use xlink:href="#icon-comment"></use>
-								</svg>
-								3.2K
-							</span>
-						</div>
-					</li>
-					<li>
-						<div class="title">
-							<a href="content.html">高并发架构系列：Redis缓存和MySQL数据一致性方案详解<span class="layui-badge layui-bg-green">原创</span></a>
-						</div>
-						<div class="extra">
-							<span class="layui-badge layui-bg-gray">
-								<svg class="icon icon-w15" aria-hidden="true">
-									<use xlink:href="#icon-shizhong"></use>
-								</svg>
-								14:07
-							</span>
-							<span class="layui-badge layui-bg-gray">
-								<svg class="icon" aria-hidden="true">
-									<use xlink:href="#icon-eye"></use>
-								</svg>
-								3.2K
-							</span>
-							<span class="layui-badge layui-bg-gray">
-								<svg class="icon icon-w15" aria-hidden="true">
-									<use xlink:href="#icon-comment"></use>
-								</svg>
-								3.2K
-							</span>
-						</div>
-					</li>					
-				</ul>
-				<div class="more">
-					<button class="layui-btn layui-btn-primary layui-btn-sm">下一页</button>
-				</div>
-			</div>
-			<div class="aside">
-				<div class="search">
-					<form class="layui-form" action="">
-						<i class="layui-icon layui-icon-search"></i>
-						<input type="text" name="keyword" placeholder="Search …" autocomplete="off" class="layui-input">
-					</form>
-				</div>
-				<div class="tag">
-					<h2>
-						<svg class="icon" aria-hidden="true">
-							<use xlink:href="#icon-biaoqian"></use>
-						</svg>
-						标签
-					</h2>
-					<a href="" class="layui-btn layui-btn-primary layui-btn-sm">php</a>
-					<a href="" class="layui-btn layui-btn-primary layui-btn-sm">golang</a>
-					<a href="" class="layui-btn layui-btn-primary layui-btn-sm">java</a>
-					<a href="" class="layui-btn layui-btn-primary layui-btn-sm">html</a>
-					<a href="" class="layui-btn layui-btn-primary layui-btn-sm">css</a>
-					<a href="" class="layui-btn layui-btn-primary layui-btn-sm">JavaScript</a>
-				</div>
-				<div class="file">
-					<h2>
-						<svg class="icon" aria-hidden="true">
-							<use xlink:href="#icon-guidang"></use>
-						</svg>
-						归档
-					</h2>
-					<ul>
-						<li>
-							<a href="">2018年十二月 (1)</a>
-						</li>
-						<li>
-							<a href="">2018年五月 (1)</a>
-						</li>
-						<li>
-							<a href="">2017年四月 (1)</a>
-						</li>
-					</ul>	
-				</div>
-				<div class="friend">
-					<h2>
-						<svg class="icon" aria-hidden="true">
-							<use xlink:href="#icon-youqinglianjie"></use>
-						</svg>
-						友链
-					</h2>
-					<ul>
-						<li>
-							<a href="">http://www.example.xxx</a>
-						</li>
-					</ul>	
-				</div>
-			</div>
+			<div class="menu">
+                <ul class="layui-nav layui-nav-tree" lay-filter="test">
+                    <!-- 侧边导航: <ul class="layui-nav layui-nav-tree layui-nav-side"> -->
+                    <li class="layui-nav-item layui-this">
+                        <a href="ucenter.html">
+                            我的主页
+                        </a>
+                    </li>
+                    <li class="layui-nav-item">
+                        <a href="changePassword.html">
+                            修改密码
+                        </a>
+                    </li>
+                    <li class="layui-nav-item layui-nav-itemed">
+                        <a href="javascript:;">默认展开</a>
+                        <dl class="layui-nav-child">
+                            <dd>
+                                <a href="javascript:;">选项1</a>
+                            </dd>
+                            <dd>
+                                <a href="javascript:;">选项2</a>
+                            </dd>
+                            <dd>
+                                <a href="">跳转</a>
+                            </dd>
+                        </dl>
+                    </li>
+                </ul>
+            </div>
+            <div class="content">
+                <h2 class="homePage">Hi，梦想星辰大海。</h2>
+            </div>
 		</div>
 	</div>
 	<!--底部-->

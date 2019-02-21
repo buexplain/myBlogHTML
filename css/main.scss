@@ -479,3 +479,68 @@ body {
         }
     }
 }
+
+/*登录 注册 忘记密码*/
+.blog {
+    .signIn,.register,.forget {
+        padding: 15px;
+        border-radius: 2px;
+        background: $font-color-white;
+        .captcha {
+            label {
+                background: $font-color-white;
+                border: 0;
+            }
+            img {
+                background: $body-background-color;
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+/*个人中心*/
+.blog {
+    /*菜单*/
+    .menu {
+        width: 200px;
+        position: absolute;
+        left: 0;
+        top: 0;
+        border-radius: 2px;
+        height: 100%;
+        .layui-nav-tree {
+            height: 100% !important;
+        }
+    }
+    @media only screen and (max-width: 1024px) {
+        .menu {
+            position: unset !important;
+            width: 92%;
+            margin-left: 4% !important;
+            margin-right: 4% !important;
+            .layui-nav-tree {
+                width: 100% !important;
+            }
+        }
+    }
+     /*内容*/
+     .content {
+        background-color: $font-color-white;
+		margin-left: 215px;
+        border-radius: 2px;
+        min-height: 600px;
+        .changePassword,.homePage {
+            padding: 15px;
+        }
+    }
+    @media only screen and (max-width: 1024px) {
+        .content {
+            width: 92%;
+            margin-top: 15px;
+            margin-left: 4% !important;
+            margin-right: 4% !important;
+            min-height: 320px !important;
+        }
+    }
+}

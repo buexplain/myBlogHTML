@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+	<meta charset="UTF-8">
+	<title>fool</title>
+	<meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+	<link rel="stylesheet" href="layui/css/layui.css">
+	<link rel="stylesheet" href="css/main.css">
+	<script src="//at.alicdn.com/t/font_976607_ni3gchk1s7n.js"></script>
+	<!--
+      / _|  ___    ___  | |
+     | |_  / _ \  / _ \ | |
+     |  _|| (_) || (_) || |
+     |_|   \___/  \___/ |_|
+	-->
+</head>
+
+<body class="blog">
+	<!--头部-->
+	<div class="header">
+        <!--logo-->
+        <div class="logo float-left">
+            <a href="index.html">
+                <img src="images/logo.png" alt="" class="image">
+                <span class="text">fool</span>
+            </a>
+        </div>
+        <!--导航-->
+        <div class="nav float-right">
+            <ul class="layui-nav">
+                <li class="layui-nav-item">
+                    <a href="javascript:;">编程</a>
+                    <dl class="layui-nav-child">
+                        <dd>
+                            <a href="index.html">前端</a>
+                        </dd>
+                        <dd>
+                            <a href="index.html">后端</a>
+                        </dd>
+                        <dd>
+                            <a href="index.html">算法</a>
+                        </dd>
+                    </dl>
+                </li>
+                <li class="layui-nav-item">
+                    <a href="index.html">杂谈</a>
+                </li>
+                <li class="layui-nav-item">
+                    <a href="index.html">留言</a>
+                </li>
+                <li class="layui-nav-item" title="登录">
+                    <a href="signIn.html">
+                        <svg class="icon" aria-hidden="true">
+                            <use xlink:href="#icon-denglu"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li class="layui-nav-item" title="注册">
+                    <a href="registerStep1.html">
+                        <svg class="icon" aria-hidden="true">
+                            <use xlink:href="#icon-zhuce1"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li class="layui-nav-item">
+                    <a href="javascript:;">梦想星辰大海</a>
+                    <dl class="layui-nav-child">
+                        <dd>
+                            <a href="ucenter.html">个人中心</a>
+                        </dd>
+                        <dd>
+                            <a href="">安全退出</a>
+                        </dd>
+                    </dl>
+                </li>
+            </ul>
+        </div>
+        <!--汉堡按钮-->
+        <a href="javascript:;" class="hamburger-btn float-right">
+            <i class="layui-icon layui-icon-more"></i>
+        </a>
+        <!--汉堡导航-->
+        <ul class="layui-nav layui-nav-tree hamburger-nav">
+            <li class="layui-nav-item">
+                <a href="javascript:;">编程</a>
+                <dl class="layui-nav-child">
+                    <dd>
+                        <a href="index.html">前端</a>
+                    </dd>
+                    <dd>
+                        <a href="index.html">后端</a>
+                    </dd>
+                    <dd>
+                        <a href="index.html">算法</a>
+                    </dd>
+                </dl>
+            </li>
+            <li class="layui-nav-item">
+                <a href="index.html">杂谈</a>
+            </li>
+            <li class="layui-nav-item">
+                <a href="index.html">留言</a>
+            </li>
+            <li class="layui-nav-item" title="登录">
+                <a href="signIn.html">
+                    <svg class="icon" aria-hidden="true">
+                        <use xlink:href="#icon-denglu"></use>
+                    </svg>
+                </a>
+            </li>
+            <li class="layui-nav-item" title="注册">
+                <a href="registerStep1.html">
+                    <svg class="icon" aria-hidden="true">
+                        <use xlink:href="#icon-zhuce1"></use>
+                    </svg>
+                </a>
+            </li>
+            <li class="layui-nav-item">
+                <a href="javascript:;">梦想星辰大海</a>
+                <dl class="layui-nav-child">
+                    <dd>
+                        <a href="ucenter.html">个人中心</a>
+                    </dd>
+                    <dd>
+                        <a href="">安全退出</a>
+                    </dd>
+                </dl>
+            </li>
+        </ul>
+    </div>
+	<!--主体内容-->
+	<div class="container">
+		<div class="wrap">
+            <div class="forget">
+                <fieldset class="layui-elem-field layui-field-title">
+                    <legend>忘记密码 - 第二步</legend>
+                    <div class="layui-field-box">
+                        <form class="layui-form layui-form-pane" action="" method="get">
+                            <div class="layui-form-item">
+                                <label class="layui-form-label">
+                                    验证码
+                                </label>
+                                <div class="layui-input-inline">
+                                    <input type="text" name="captcha" required lay-verify="required" value="" placeholder="请输入验证码" autocomplete="off" class="layui-input">
+                                </div>
+                            </div>
+
+                            <div class="layui-form-item">
+                                <label class="layui-form-label">
+                                    新密码
+                                </label>
+                                <div class="layui-input-inline">
+                                        <input type="password" name="password" required lay-verify="required" value="" placeholder="请输入新密码" autocomplete="off" class="layui-input">
+                                </div>
+                            </div>
+                            <div class="layui-form-item">
+                                <div class="layui-input-block">
+                                    <button class="layui-btn" lay-submit lay-filter="j-f-forget">修改</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </fieldset>        
+            </div>
+		</div>
+	</div>
+	<!--底部-->
+	<div class="footer">
+		<p>
+			<span>&copy; 2018</span>
+			<span>MIT license</span>
+		</p>
+	</div>
+	<script src="layui/layui.js"></script>
+	<script src="js/main.js"></script>
+</body>
+
+</html>
