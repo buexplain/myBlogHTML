@@ -178,7 +178,6 @@ body {
   /*列表*/
   /*侧边*/
   /*详情*/
-  /*评论*/
 }
 
 .blog .icon {
@@ -196,7 +195,7 @@ body {
 
 .blog .container {
   min-height: 100%;
-  padding: 100px 0 120px 0;
+  padding: 100px 0 90px 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
@@ -452,147 +451,6 @@ body {
     margin-left: 4% !important;
     margin-right: 4% !important;
     padding: 3%;
-  }
-}
-
-.blog .comment {
-  background-color: #F0F0F0;
-}
-
-.blog .comment .list ul > li {
-  border-bottom: 1px solid #c2c2c2;
-  border-left: 1px solid #c2c2c2;
-  border-radius: 2px;
-  margin-bottom: 25px;
-}
-
-.blog .comment .list ul > li:last-child {
-  border: none;
-  margin-bottom: 0px;
-}
-
-.blog .comment .list .avatar {
-  float: left;
-}
-
-.blog .comment .list .avatar img {
-  max-width: 50px;
-  border-radius: 2px;
-}
-
-.blog .comment .list .col {
-  padding-left: 65px;
-}
-
-.blog .comment .list .col .title .nickname:hover {
-  color: #4183c4;
-}
-
-.blog .comment .list .col .title .post-time {
-  color: #787878;
-  font-size: 14px;
-  float: right;
-}
-
-.blog .comment .list .col .content {
-  font-size: 16px;
-}
-
-.blog .comment .list .col .operation {
-  text-align: right;
-}
-
-.blog .comment .list .col .operation a {
-  color: #787878;
-  font-size: 14px;
-  margin-left: 15px;
-}
-
-.blog .comment .list .col .operation a:hover {
-  color: #4183c4;
-}
-
-.blog .comment .more {
-  text-align: center;
-  background-color: #F0F0F0;
-  padding-top: 15px;
-  font-size: 16px;
-}
-
-@media only screen and (max-width: 1024px) {
-  .blog .comment {
-    width: 92%;
-    margin-left: 4% !important;
-    margin-right: 4% !important;
-  }
-}
-
-/*登录 注册 忘记密码*/
-.blog .signIn, .blog .register, .blog .forget {
-  padding: 15px;
-  border-radius: 2px;
-  background: #fff;
-}
-
-.blog .signIn .captcha label, .blog .register .captcha label, .blog .forget .captcha label {
-  background: #fff;
-  border: 0;
-}
-
-.blog .signIn .captcha img, .blog .register .captcha img, .blog .forget .captcha img {
-  background: #F0F0F0;
-  cursor: pointer;
-}
-
-/*个人中心*/
-.blog {
-  /*菜单*/
-  /*内容*/
-}
-
-.blog .menu {
-  width: 200px;
-  position: absolute;
-  left: 0;
-  top: 0;
-  border-radius: 2px;
-  height: 100%;
-}
-
-.blog .menu .layui-nav-tree {
-  height: 100% !important;
-}
-
-@media only screen and (max-width: 1024px) {
-  .blog .menu {
-    position: unset !important;
-    width: 92%;
-    margin-left: 4% !important;
-    margin-right: 4% !important;
-  }
-  .blog .menu .layui-nav-tree {
-    width: 100% !important;
-  }
-}
-
-.blog .content {
-  background-color: #fff;
-  margin-left: 215px;
-  border-radius: 2px;
-  min-height: 600px;
-}
-
-.blog .content .changePassword, .blog .content .homePage {
-  padding: 15px;
-}
-
-@media only screen and (max-width: 1024px) {
-  .blog .content {
-    width: 92%;
-    margin-top: 15px;
-    margin-left: 4% !important;
-    margin-right: 4% !important;
-    min-height: 320px !important;
   }
 }
 /*# sourceMappingURL=main.css.map */

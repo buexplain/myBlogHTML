@@ -192,7 +192,7 @@ body {
     }
 	.container {
 		min-height: 100%;
-		padding: 100px 0 120px 0;
+		padding: 100px 0 90px 0;
 		box-sizing: border-box;
 	}
 	.wrap {
@@ -411,136 +411,6 @@ body {
             margin-left: 4% !important;
             margin-right: 4% !important;
             padding: 3%;
-        }
-    }
-    /*评论*/
-    .comment {
-        background-color: $body-background-color;
-        .list {
-            ul>li {
-                border-bottom: 1px solid $border-color;
-                border-left: 1px solid $border-color;
-                border-radius: 2px;
-                margin-bottom: 25px;
-                &:last-child {
-                    border: none;
-                    margin-bottom: 0px;
-                }
-            }
-            .avatar {
-                float: left;
-                img {
-                    max-width: 50px;
-                    border-radius: 2px;
-                }
-            }
-            .col {
-                padding-left: 65px;
-                .title {
-                    .nickname {
-                        &:hover{
-                            color: $font-color-hover;    
-                        }
-                    }
-                    .post-time {
-                        color: $font-color-gray;
-                        font-size: $font-size-extra;
-                        float: right;
-                    }
-                }
-                .content {
-                    font-size: $font-size-content;
-                }
-                .operation {
-                    text-align: right;
-                    a {
-                        color: $font-color-gray;
-                        font-size: $font-size-extra;
-                        margin-left: 15px;
-                        &:hover{
-                            color: $font-color-hover;    
-                        }
-                    }
-                }
-            }
-        }
-        .more {
-            text-align: center;
-            background-color: $body-background-color;
-            padding-top: 15px;
-            font-size: $font-size-content;
-        }
-    }
-    @media only screen and (max-width: 1024px) {
-        .comment {
-            width: 92%;
-            margin-left: 4% !important;
-            margin-right: 4% !important;
-        }
-    }
-}
-
-/*登录 注册 忘记密码*/
-.blog {
-    .signIn,.register,.forget {
-        padding: 15px;
-        border-radius: 2px;
-        background: $font-color-white;
-        .captcha {
-            label {
-                background: $font-color-white;
-                border: 0;
-            }
-            img {
-                background: $body-background-color;
-                cursor: pointer;
-            }
-        }
-    }
-}
-
-/*个人中心*/
-.blog {
-    /*菜单*/
-    .menu {
-        width: 200px;
-        position: absolute;
-        left: 0;
-        top: 0;
-        border-radius: 2px;
-        height: 100%;
-        .layui-nav-tree {
-            height: 100% !important;
-        }
-    }
-    @media only screen and (max-width: 1024px) {
-        .menu {
-            position: unset !important;
-            width: 92%;
-            margin-left: 4% !important;
-            margin-right: 4% !important;
-            .layui-nav-tree {
-                width: 100% !important;
-            }
-        }
-    }
-     /*内容*/
-     .content {
-        background-color: $font-color-white;
-		margin-left: 215px;
-        border-radius: 2px;
-        min-height: 600px;
-        .changePassword,.homePage {
-            padding: 15px;
-        }
-    }
-    @media only screen and (max-width: 1024px) {
-        .content {
-            width: 92%;
-            margin-top: 15px;
-            margin-left: 4% !important;
-            margin-right: 4% !important;
-            min-height: 320px !important;
         }
     }
 }
