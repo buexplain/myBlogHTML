@@ -349,20 +349,20 @@ body {
   color: #4183c4;
 }
 
-.blog .aside .file li, .blog .aside .friend li {
+.blog .aside .file li {
   padding: 8px 0;
   border-bottom: 1px solid #c2c2c2;
 }
 
-.blog .aside .file li:last-child, .blog .aside .friend li:last-child {
+.blog .aside .file li:last-child {
   border-bottom: 0;
 }
 
-.blog .aside .file li a, .blog .aside .friend li a {
+.blog .aside .file li a {
   font-size: 16px;
 }
 
-.blog .aside .file li a:hover, .blog .aside .friend li a:hover {
+.blog .aside .file li a:hover {
   color: #4183c4;
 }
 
