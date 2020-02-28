@@ -345,7 +345,7 @@ body {
   font-size: 16px;
 }
 
-.blog .aside .tag a:hover {
+.blog .aside .tag a:hover, .blog .aside .tag a.current {
   color: #4183c4;
 }
 
@@ -362,7 +362,7 @@ body {
   font-size: 16px;
 }
 
-.blog .aside .file li a:hover {
+.blog .aside .file li a:hover, .blog .aside .file li a.current {
   color: #4183c4;
 }
 

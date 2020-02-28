@@ -314,7 +314,7 @@ body {
                 padding: 5px 8px;
                 line-height: 18px;
                 font-size: $font-size-content;
-                &:hover {
+                &:hover,&.current {
                     color: $font-color-hover;
                 }
             }
@@ -327,7 +327,7 @@ body {
                     border-bottom: 0;
                 }    
                 a {
-                    &:hover {
+                    &:hover,&.current {
                         color: $font-color-hover;
                     }
                     font-size: $font-size-content;
